@@ -13,6 +13,9 @@ public class ATMDispenseChain implements DispenseChain {
         // Set the chain of responsibility
         nextChain.setNextChain(c2);
         c2.setNextChain(c3);
+        c3.setNextChain(c4);
+        c4.setNextChain(c5);
+        c5.setNextChain(c6);
     }
 
 
